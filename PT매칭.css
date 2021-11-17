@@ -1,0 +1,480 @@
+.siteHeader{
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 1000;
+    box-sizing: border-box;
+    height: 200px;
+    width: 100%;
+    display: block;
+}
+.row-main{
+    align-items: center;
+    display: flex;
+    position: relative;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1800px;
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    letter-spacing: 0;
+}
+.header-left{
+    display: flex;
+    text-align: left;
+    padding-left: 16px;
+    box-sizing: border-box;
+    vertical-align: middle;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.headerLogo{
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    letter-spacing: 0em;
+    font-style: normal;
+    color: #222222;
+    vertical-align: middle;
+    outline: none;
+    text-align: left;
+    text-decoration: none;
+}
+.header-center{
+    display: flex;
+    text-align: center;
+    box-sizing: border-box;
+    vertical-align: middle;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.headerTabList{
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 0.01em;
+}
+.header-center-tab{
+    list-style: none;
+    display: flex;
+}
+.header-right{
+    display: flex;
+    text-align: right;
+    padding-right: 16px;
+    box-sizing: border-box;
+    vertical-align: middle;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.headerCartAndCustomer{
+    list-style: none;
+    display: flex;
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 0.01em;
+    color: #222222;
+    vertical-align: middle;
+    position: relative;
+}
+.headerProductSearch{
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    vertical-align: middle;
+    margin-right: 30px;
+    text-decoration: none;
+    color: #222222;
+}
+.headerCustomer{
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    vertical-align: middle;
+    margin-right: 30px;
+    text-decoration: none;
+    color: #222222;
+}
+.headerCart{
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    vertical-align: middle;
+    margin-right: 30px;
+    text-decoration: none;
+    color: #222222;
+}
+.tab-navi{
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    vertical-align: middle;
+    margin-right: 30px;
+    text-decoration: none;
+}
+.tab-navi-now{
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    vertical-align: middle;
+    margin-right: 30px;
+    text-decoration: none;
+}
+#tabname{
+    text-decoration: none;
+    color: #222222;
+}
+#tabintro{
+    text-decoration: none;
+    color: #222222;
+}
+#tabprogram{
+    text-decoration: none;
+    color: #222222;
+}
+#tabmatching{
+    text-decoration: none;
+    color: #222222;
+}
+#tabtrainer{
+    text-decoration: none;
+    color: #222222;
+}
+#tabguide{
+    text-decoration: none;
+    color: #222222;
+}
+.search-input-box{
+    display: flex;
+    height: 1em;
+    width: 10em;
+    max-width: 200px;
+    position: absolute;
+    left: -999999999999px;
+    opacity: 0;
+    transition: opacity .4s linear;
+    line-height: 1em;
+}
+.headerSearchBar{
+    display: inline-block;
+    height: calc(1em + 2px);
+    border-bottom: 1px solid;
+    -webkit-box-flex: 1;
+    vertical-align: middle;
+}
+.input{
+    width: 100%;
+    height: 1.5em;
+    margin-top: -0.5em;
+    border: none;
+    background-color: transparent;
+    -webkit-appearance: none;
+    border-radius: 0
+}
+
+
+
+.siteFooter{
+    height: auto;
+    width: 100%;
+}
+.footer-row-main{
+    max-width: 1800px;
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    position: relative;
+    margin: 0 auto;
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.footer-left{
+    width: 70%;
+    vertical-align: top;
+    padding-left: 16px;
+    display: inline-block;
+    text-align: left;
+    font-family: Montserrat, sans-serif;
+}
+.footerCompanyInfo{
+    display: block;
+    margin-bottom: 0.5em;
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 0.01em;
+    line-height: 2em;
+    vertical-align: middle;
+    position: relative;
+    text-decoration: none;
+}
+.footerEscrow{
+    z-index: 0;
+    margin-right: 1em;
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 0.01em;
+    line-height: 2em;
+    vertical-align: middle;
+    position: relative;
+    display: inline-block;
+}
+.escrowImg.toss{
+    height: 16px;
+}
+.escrowTextSpan{
+    vertical-align: middle;
+    text-decoration: none !important;
+}
+.footerSystemMenuList{
+    z-index: 0;
+    font-family: Noto Sans KR, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 0.01em;
+    line-height: 2em;
+    vertical-align: middle;
+    position: relative;
+    display: inline-block;
+}
+.footerMenuNaviPolicy{
+    text-decoration: none;
+}
+.footer-center{
+    display: inline-block;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.footer-right{
+    width: 30%;
+    vertical-align: top;
+    text-align: right;
+    padding-right: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+.footerMenuList{
+    line-height: 1.5em;
+    display: flex;
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 0.01em;
+    vertical-align: middle;
+}
+.footerSns{
+    font-size: 24px;
+    vertical-align: middle;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    text-align: right;
+}
+.sns-phone{
+    height: 30px;
+}
+.sns-email{
+    height: 30px;
+}
+.sns-instagram{
+    height: 30px;
+}
+.sns-kakaotalk{
+    height: 30px;
+}
+.sns-kakaochannel{
+    height: 30px;
+}
+#footerSns-telephone{
+    margin-right: 10px;
+}
+#footerSns-email{
+    margin-right: 10px;
+}
+#footerSns-instagram{
+    margin-right: 10px;
+}
+#footerSns-kakaoTalk{
+    margin-right: 10px;
+}
+.tab-navi:hover > .tablist{
+    color:#FF7459 !important;
+}
+
+
+
+/* 여기서부터 PT매칭 페이지 */
+
+.column1{
+    float: left;
+    width: 50%;
+}
+.column1-top{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.column1-title{
+    margin-top: 30px;
+    color: #000000;
+    font-family: Arial, sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    line-height: 1.5em;
+    font-size: 28px;
+    text-align: center;
+    width: 80%;
+}
+.column1-text{
+    margin-top: 30px;
+    color: #434343;
+    font-family: Noto Sans KR, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    line-height: 1.7em;
+    font-size: 15px;
+    width: 80%;
+    text-align: center;
+}
+.column1-img{
+    margin-top: 30px;
+}
+.column1-question{
+    text-align: left;
+    margin-top: 30px;
+    color: #434343;
+    font-family: Noto Sans KR, sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.01em;
+    line-height: 1.7em;
+    font-size: 15px;
+    padding-left: 90px;
+}
+.column1-question-subtext{
+    text-align: left;
+    margin-top: 5px;
+    color: #434343;
+    font-family: Noto Sans KR, sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.01em;
+    line-height: 1.7em;
+    font-size: 12px;
+    padding-left: 90px;
+}
+.column1-question-subtext11{
+    text-align: left;
+    margin-top: 5px;
+    color: #434343;
+    font-family: Noto Sans KR, sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.01em;
+    line-height: 1.7em;
+    font-size: 12px;
+    padding-left: 90px;
+    width: 80%
+}
+.question-input-box{
+    margin-top: 10px;
+    padding-left: 90px;
+}
+.input-box{
+    height: 30px;
+    width: 90%;
+}
+input[type='text']::placeholder{   
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.input-box-large{
+    height: 90px;
+    width: 90%;
+}
+.question-checkbox{
+    margin-top: 10px;
+    padding-left: 90px;
+    display: flex;
+    flex-direction: column;
+}
+.checkboxlist{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+.checkbox-text{
+    margin-left: 10px;
+    color: #434343;
+    font-family: Noto Sans KR, sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.01em;
+    font-size: 14px;
+}
+.column1-button{
+    margin-top: 30px;
+    text-decoration: none;
+    padding-left: 90px;
+}
+.column1-button-content{
+    color: #ffffff;
+    font-family: Noto Sans KR, sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 0.01em;
+    text-decoration: none;
+    padding : 18px;
+    padding-left: 70px;
+    padding-right: 70px;
+    background-color: #575757;
+}
+.column1-button:hover{
+    opacity: .8 ;
+}
+.column2{
+    float: left;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.column2-title{
+    margin-top: 30px;
+    color: #000000;
+    font-family: Arial, sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    line-height: 1.5em;
+    font-size: 28px;
+    text-align: center;
+    width: 80%;
+}
+.column2-text{
+    margin-top: 30px;
+    color: #434343;
+    font-family: Noto Sans KR, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    line-height: 1.7em;
+    font-size: 15px;
+    width: 80%;
+    text-align: center;
+}
+.column2-img{
+    width: 100%;
+    margin-top: 30px;
+}
