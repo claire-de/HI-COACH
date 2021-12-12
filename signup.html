@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="signup.css" rel="stylesheet">
+    <link href="./assets/css/signup.css" rel="stylesheet">
     <title>SIGNUP</title>
 </head>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <body>
     <header id = "siteHeader">
         <div class = "row-main">
@@ -77,7 +78,7 @@
             <div class = "login-box-title">회원가입</div>
             <div class = "login-box-subtitle">아이디 *</div>
             <div class = "login-input-box">
-                <input type = "text" class = "input-box" placeholder = "영문, 숫자 5자 이상 입력해주세요.">
+                <input type = "text" class = "input-box" id = "input-box-id" placeholder = "영문, 숫자 5자 이상 입력해주세요.">
             </div>
             <div class = "login-box-subtitle">이메일 *</div>
             <div class = "login-input-box">
@@ -89,11 +90,19 @@
             </div>
             <div class = "login-box-subtitle">비밀번호 *</div>
             <div class = "login-input-box">
-                <input type = "text" class = "input-box" placeholder = "6자 이상 입력해주세요.">
+                <input type = "text" class = "input-box" id = "input-box-pw" placeholder = "6자 이상 입력해주세요.">
             </div>
             <div class = "login-box-subtitle">비밀번호 확인 *</div>
             <div class = "login-input-box">
-                <input type = "text" class = "input-box">
+                <input type = "text" class = "input-box" id = "input-box-pw2">
+            </div>
+            <div class = "login-box-subtitle">휴대폰 번호 *</div>
+            <div class = "login-input-box-phone">
+                <input type = "text" class = "input-box-phone" id = "input-box-phone1">
+                <div class = "hyphen"> - </div>
+                <input type = "text" class = "input-box-phone" id = "input-box-phone2">
+                <div class = "hyphen"> - </div>
+                <input type = "text" class = "input-box-phone" maxlength="4" id = "input-box-phone3">
             </div>
             <div class = "login-box-subtitle">성별 *</div>
             <div class = "radiolist-wrapper">
@@ -132,7 +141,11 @@
             </div>
         </div>
         <div class = "login-button" >
-            <div class="login-button-content">가입하기</div>
+            <button id="signup-button">
+                <div class =  "signup-button-content">
+                    가입하기
+                </div>
+            </button>
         </div>
     </div>
     <footer id = "siteFooter">
@@ -175,27 +188,67 @@
                 <div class="footerSns" data-itemtype="footer-sns">
                     <a id="footerSns-telephone" class="footerSns-icons userCustomIcon-icomoon-telephone" href="#" data-originallink="tel:01050526141">
                         <div data-i="icomoon-telephone" class="icomoon-telephone"></div>
-                        <img class="sns-phone" src="phone.png">
+                        <img class="sns-phone" src="./assets/img/phone.png">
                     </a>
                     <a id="footerSns-email" class="footerSns-icons userCustomIcon-icomoon-email" href="mailto:hicoach@hicoachofficial.com" data-originallink="mailto:hicoach@hicoachofficial.com">
                         <div data-i="icomoon-email" class="icomoon-email"></div>
-                        <img class="sns-email" src="mail.png">
+                        <img class="sns-email" src="./assets/img/mail.png">
                     </a>
                     <a id="footerSns-instagram" class="footerSns-icons userCustomIcon-icomoon-instagram" href="https://www.instagram.com/hicoach_official/" data-originallink="https://www.instagram.com/hicoach_official/" target="_blank">
                         <div data-i="icomoon-instagram" class="icomoon-instagram"></div>
-                        <img class="sns-instagram" src="Instagram.png">
+                        <img class="sns-instagram" src="./assets/img/Instagram.png">
                     </a>
                     <a id="footerSns-kakaoTalk" class="footerSns-icons userCustomIcon-icomoon-kakaoTalk" href="http://pf.kakao.com/_EfLxns/chat" data-originallink="http://pf.kakao.com/_EfLxns/chat" target="_blank">
                         <div data-i="icomoon-kakaoTalk" class="icomoon-kakaoTalk"></div>
-                        <img class="sns-kakaotalk" src="Kakaotalk.png">
+                        <img class="sns-kakaotalk" src="./assets/img/Kakaotalk.png">
                     </a>
                     <a id="footerSns-kakaoYellowId" class="footerSns-icons userCustomIcon-icomoon-kakaoYellowId" href="http://pf.kakao.com/_EfLxns" data-originallink="http://pf.kakao.com/_EfLxns" target="_blank">
                         <div data-i="icomoon-kakaoYellowId" class="icomoon-kakaoYellowId"></div>
-                        <img class="sns-kakaochannel" src="Kakao Channel.png">
+                        <img class="sns-kakaochannel" src="./assets/img/Kakao Channel.png">
                     </a>
                 </div>
             </div>
         </div>
     </footer>
 </body>
+<script>
+    $("#signup-button").click(function(){
+        let n = $("#input-box-id").val().length;
+        if (n < 5) {
+            $("#input-box-id").css("border-color", "#ff0000");
+        }
+        else{
+            $("#input-box-id").css("border-color", "#dddddd");
+        }
+    })
+    $("#signup-button").click(function(){
+        let n = $("#input-box-pw").val().length;
+        if (n < 6) {
+            $("#input-box-pw").css("border-color", "#ff0000");
+        }
+        else{
+            $("#input-box-pw").css("border-color", "#dddddd");
+        }
+    })
+    $("#signup-button").click(function(){
+        if ($("#input-box-pw").val() === $("#input-box-pw2").val()){
+            $("#input-box-pw").css("border-color", "#dddddd");
+            $("#input-box-pw2").css("border-color", "#dddddd");
+        }
+        else {
+            $("#input-box-pw").css("border-color", "#ff0000");
+            $("#input-box-pw2").css("border-color", "#ff0000");
+        }
+    })
+    $("#input-box-phone1").keyup(function() {
+        if ($(this).val().length === 3){
+            $("#input-box-phone2").focus();
+        }
+    })
+    $("#input-box-phone2").keyup(function() {
+        if ($(this).val().length === 4){
+            $("#input-box-phone3").focus();
+        }
+    })
+</script>
 </html>

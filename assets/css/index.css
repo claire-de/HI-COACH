@@ -4,13 +4,14 @@
     position: fixed;
     z-index: 1000;
     box-sizing: border-box;
-    height: 200px;
+    height: auto;
     width: 100%;
     display: block;
 }
 .row-main{
     align-items: center;
     display: flex;
+    justify-content: space-between;
     position: relative;
     margin-top: 0px;
     margin-right: auto;
@@ -315,91 +316,63 @@
     color:#FF7459 !important;
 }
 
-/* 여기부터 회원가입 관련 내용 */
+/* 여기부터 HOME 내용 */
 .body{
+    
+}
+.hero-content{
+    position: relative;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.home-video{
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    margin: 0;
+    height: 570px;
+    width: 100%; 
+    overflow: hidden; 
+}
+.video{
+    object-fit: cover;
+    height: auto;
+    width : 100%;
+}
+.hero-caption-wrapper{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
-.signup-box{
-    display: flex;
-    flex-direction: column;
-}
-.login-box-title{
-    font-size: 20px;
-    line-height: 32px;
-    color: #000000;
-    font-family: Arial, sans-serif;
+.hero-caption-title{
+    font-family: Montserrat, sans-serif;
     font-weight: 400;
-    letter-spacing: 0.01em;
-    margin-bottom: 30px;
+    font-size: 66px;
+    color: #ffffff;
 }
-.login-box-subtitle{
-    color: #434343;
+.hero-caption-body{
+    margin-top: 20px;
     font-family: Noto Sans KR, sans-serif;
     font-weight: 400;
-    letter-spacing: 0.01em;
-    font-size: 14px;
-    line-height: 17px;
-    margin-bottom: 12px;
+    font-size: 18px;
+    color: #ffffff;
+    letter-spacing: 0.05em;
+    line-height: 1.5em;
 }
-.input-box{
-    height: 38px;
-    width: 400px;
-    margin-bottom: 20px;
-    border: 1.8px solid #dddddd;
-}
-.radiolist1{
-    display: flex;
-    flex-direction: row;
-}
-.radiolist2{
-    display: flex;
-    flex-direction: row;
-    margin-left: 30px;
-}
-.radiolist-wrapper{
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 20px;
-}
-.radio-text{
-    margin-left: 10px;
-    color: #434343;
-    font-family: Noto Sans KR, sans-serif;
-    font-weight: 300;
-    letter-spacing: 0.01em;
-    font-size: 14px;
-}
-.question-checkbox{
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-}
-.checkboxlist{
-    display: flex;
-    flex-direction: row;
-    margin-top: 10px;
-}
-.checkbox-text{
-    margin-left: 10px;
-    color: #434343;
-    font-family: Noto Sans KR, sans-serif;
-    font-weight: 300;
-    letter-spacing: 0.01em;
-    font-size: 14px;
-}
-.login-button{
+.hero-caption-button{
     margin-top: 30px;
-    border: 2px solid #575757;
+    border: 2px solid #ffffff;
     text-decoration: none;
-    width: 250px;
-    display: flex;
-    justify-content: center;
 }
-.login-button-content{
-    color: #575757;
+.hero-caption-button-content{
+    color: #ffffff;
     font-family: Noto Sans KR, sans-serif;
     font-weight: 700;
     font-size: 15px;
@@ -410,9 +383,205 @@
     margin-top: 16px;
     margin-bottom: 16px;
 }
-.login-button:hover{
+.hero-caption-button:hover > .hero-caption-button-content{
+    color: #000000;
+}
+.hero-caption-button:hover{
+    background-color: #ffffff ;
+}
+.adbanner-wrapper{
+    overflow-x: hidden;
+    background-color: #543dd1;
+}
+@keyframes changewidth{
+	from{
+		transform: translateX(-300px);
+	}
+	to{
+		transform: translateX(300px);
+	}
+}
+.adbanner{
+    height: 48px;
+    display: flex;
+    width: 300%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #543dd1;
+    width: calc(100% + 600px);
+    /* animation */
+    transition-duration: 1s;
+    animation-name: changewidth;
+
+    animation-timing-function: linear;
+    animation-duration: 10s;
+    animation-delay: 1s;
+
+    animation-iteration-count: infinite; 
+    animation-direction: revert;
+}
+.adbanner-text{
+    margin-left: 70px;
+    color: #ffffff;
+    font-family: Noto Sans KR, Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+}
+.section-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+}
+.section-title{
+    margin-top: 100px;
+    color: rgb(84, 61, 209);
+    font-size: 37px;
+    font-family: Arial, sans-serif;
+    font-weight: 800;
+    letter-spacing: 0.01em;
+    line-height: 1.5em;
+    padding-left: 90px;
+}
+.section-img{
+    width: 100%;
+}
+.section-img-wrapper{
+    max-width: 1800px;
+    padding-left: 90px;
+    padding-right: 90px;
+    margin-top: 30px;
+}
+.section-content1-title{
+    margin-top: 30px;
+    color: #000000;
+    font-family: Arial, sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    line-height: 1.5em;
+    font-size: 25px;
+    padding-left: 90px;
+}
+.section-content1-subtitle{
+    margin-top: 30px;
+    color: #000000;
+    font-family: Arial, sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    line-height: 1.5em;
+    font-size: 16px;
+    padding-left: 90px;
+}
+.section-content1{
+    margin-top: 30px;
+    color: #434343;
+    font-family: Noto Sans KR, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    line-height: 1.7em;
+    padding-left: 90px;
+}
+.section-content1-button{
+    margin-top: 30px;
+    text-decoration: none;
+    padding-left: 90px;
+}
+.section-content1-button-content{
+    color: #ffffff;
+    font-family: Noto Sans KR, sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 0.01em;
+    text-decoration: none;
+    padding : 16px;
+    padding-left: 30px;
+    padding-right: 30px;
     background-color: #575757;
 }
-.login-button:hover > .login-button-content{
-    color: #ffffff
+.section-content1-button:hover{
+    opacity: .8 ;
+}
+.section-content2-title{
+    margin-top: 100px;
+    color: #000000;
+    font-family: Arial, sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    line-height: 1.5em;
+    font-size: 25px;
+    padding-left: 90px;
+}
+.section-content2-subtitle{
+    margin-top: 30px;
+    color: #000000;
+    font-family: Arial, sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    line-height: 1.5em;
+    font-size: 16px;
+    padding-left: 90px;
+}
+.section-content2{
+    margin-top: 30px;
+    color: #434343;
+    font-family: Noto Sans KR, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    line-height: 1.7em;
+    padding-left: 90px;
+} 
+.section-content2-button{
+    margin-top: 30px;
+    text-decoration: none;
+    padding-left: 90px;
+}
+.section-content2-button-content{
+    color: #ffffff;
+    font-family: Noto Sans KR, sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 0.01em;
+    text-decoration: none;
+    padding : 16px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #575757;
+}
+.section-content2-button:hover{
+    opacity: .8 ;
+}
+.section-end-title{
+    margin-top: 100px;
+    color: rgb(84, 61, 209);
+    font-size: 28px;
+    font-family: Arial, sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    line-height: 1.5em;
+    padding-left: 90px;
+}
+.section-end-text{
+    margin-top: 30px;
+    color: #434343;
+    font-family: Noto Sans KR, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    line-height: 1.7em;
+    font-size: 15px;
+    padding-left: 90px;
+}
+.snsicons-list{
+    margin-top: 30px;
+    font-size: 24px;
+    vertical-align: middle;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    text-align: right;
+    padding-left: 90px;
+    margin-bottom: 100px;
+}
+.snsicons{
+    margin-right: 10px;
 }
