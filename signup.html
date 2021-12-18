@@ -82,7 +82,7 @@
             </div>
             <div class = "login-box-subtitle">이메일 *</div>
             <div class = "login-input-box">
-                <input type = "text" class = "input-box">
+                <input type = "text" class = "input-box" id = "input-box-email">
             </div>
             <div class = "login-box-subtitle">이름 *</div>
             <div class = "login-input-box">
@@ -104,6 +104,96 @@
                 <div class = "hyphen"> - </div>
                 <input type = "text" class = "input-box-phone" maxlength="4" id = "input-box-phone3">
             </div>
+            <div class = "login-box-subtitle">우편번호 *</div>
+            <div class = "code-wrapper">
+                <div class = "login-input-box">
+                    <input type = "text" class = "input-box" id = "input-box-code">
+                </div>
+                <button id = "search-button">
+                    <div class = "search-button-content"> 검색하기 </div>
+                </button>
+            </div>
+            <div class = "login-box-subtitle">주소 *</div>
+            <div class = "login-input-box">
+                <input type = "text" class = "input-box" id = "input-box-add1">
+            </div>
+            <div class = "login-input-box">
+                <input type = "text" class = "input-box" id = "input-box-add2">
+            </div>
+            <div class = "login-box-subtitle">생년월일 *</div>
+            <div class = "select-box-wrapper">  
+                <select class = "select-box-year" name = “year”>
+                    <option value=""> 년도</option>
+                    <option value = “2008”> 2008 </option>
+                    <option value = “2007”> 2007 </option>
+                    <option value = “2006”> 2006 </option>
+                    <option value = “2005”> 2005 </option>
+                    <option value = “2004”> 2004 </option>
+                    <option value = “2003”> 2003 </option>
+                    <option value = “2002”> 2002 </option>
+                    <option value = “2001”> 2001 </option>
+                    <option value = “2000”> 2000 </option>
+                    <option value = “1999”> 1999 </option>
+                    <option value = “1998”> 1998 </option>
+                    <option value = “1997”> 1997 </option>
+                    <option value = “1996”> 1996 </option>
+                    <option value = “1995”> 1995 </option>
+                    <option value = “1994”> 1994 </option>
+                    <option value = “1993”> 1993 </option>
+                    <option value = “1992”> 1992 </option>
+                    <option value = “1991”> 1991 </option>
+                    <option value = “1990”> 1990 </option>
+                </select> 
+                <select class = "select-box-month" name = “month”>
+                    <option value=""> 월</option>
+                    <option value = “1”> 1 </option>
+                    <option value = “2”> 2 </option>
+                    <option value = “3”> 3 </option>
+                    <option value = “4”> 4 </option>
+                    <option value = “5”> 5 </option>
+                    <option value = “6”> 6 </option>
+                    <option value = “7”> 7 </option>
+                    <option value = “8”> 8 </option>
+                    <option value = “9”> 9 </option>
+                    <option value = “10”> 10 </option>
+                    <option value = “11”> 11 </option>
+                    <option value = “12”> 12 </option>
+                </select>
+                <select class = "select-box-day" name = “day”>
+                    <option value=""> 일</option>
+                    <option value = “1”> 1 </option>
+                    <option value = “2”> 2 </option>
+                    <option value = “3”> 3 </option>
+                    <option value = “4”> 4 </option>
+                    <option value = “5”> 5 </option>
+                    <option value = “6”> 6 </option>
+                    <option value = “7”> 7 </option>
+                    <option value = “8”> 8 </option>
+                    <option value = “9”> 9 </option>
+                    <option value = “10”> 10 </option>
+                    <option value = “11”> 11 </option>
+                    <option value = “12”> 12 </option>
+                    <option value = “13”> 13 </option>
+                    <option value = “14”> 14 </option>
+                    <option value = “15”> 15 </option>
+                    <option value = “16”> 16 </option>
+                    <option value = “17”> 17 </option>
+                    <option value = “18”> 18 </option>
+                    <option value = “19”> 19 </option>
+                    <option value = “20”> 20 </option>
+                    <option value = “21”> 21 </option>
+                    <option value = “22”> 22 </option>
+                    <option value = “23”> 23 </option>
+                    <option value = “24”> 24 </option>
+                    <option value = “25”> 25 </option>
+                    <option value = “26”> 26 </option>
+                    <option value = “27”> 27 </option>
+                    <option value = “28”> 28 </option>
+                    <option value = “29”> 29 </option>
+                    <option value = “30”> 30 </option>
+                    <option value = “31”> 31 </option>
+                </select>
+            </div>    
             <div class = "login-box-subtitle">성별 *</div>
             <div class = "radiolist-wrapper">
                 <div class = "radiolist1">
@@ -121,31 +211,30 @@
             </div>
             <div class = "question-checkbox">
                 <div class = "checkboxlist">
-                    <input type = "checkbox" class = "checkbox">
+                    <input type = "checkbox" class = "checkbox" id = "check1">
                     <div class = "checkbox-text"> 모두 동의합니다. </div>
                 </div>
                 <div class = "checkboxlist">
-                    <input type = "checkbox" class = "checkbox"> 
+                    <input type = "checkbox" class = "checkbox" id = "check2"> 
                     <div class = "checkbox-text"> (필수) 이용약관과 개인정보 수집 및 이용에 동의합니다. </div>
                 </div>
                 <div class = "checkboxlist">
-                    <input type = "checkbox" class = "checkbox"> 
+                    <input type = "checkbox" class = "checkbox" id = "check3"> 
                     <div class = "checkbox-text"> (필수) 만 14세 이상입니다. </div>
                 </div>
                 <div id = "14-and-up" style = "font-size: 12px; color: #434343; font-family: Noto Sans KR, sans-serif; margin-top: 3px; margin-left: 33px;">만 19세 미만의 미성년자가 결제 시 법정대리인이 거래를 취소할 수 있습니다.</div>
                 <div class = "checkboxlist">
-                    <input type = "checkbox" class = "checkbox"> 
+                    <input type = "checkbox" class = "checkbox" id = "check4"> 
                     <div class = "checkbox-text"> (선택) 이메일 및 SMS 마케팅 정보 수신에 동의합니다. </div>
                 </div>
                 <div id = "14-and-up" style = "font-size: 12px; color: #434343; font-family: Noto Sans KR, sans-serif; margin-top: 3px; margin-left: 33px; margin-bottom: 10px;">회원은 언제든지 회원 정보에서 수신 거부로 변경할 수 있습니다.</div>
             </div>
         </div>
-        <div class = "login-button" >
-            <button id="signup-button">
-                <div class =  "signup-button-content">
-                    가입하기
-                </div>
-            </button>
+        <button id="signup-button">
+            <div class =  "signup-button-content">
+                가입하기
+            </div>
+        </button>
         </div>
     </div>
     <footer id = "siteFooter">
@@ -222,6 +311,14 @@
         }
     })
     $("#signup-button").click(function(){
+        if ($("#input-box-email").val().includes("@") == true) {
+            $("#input-box-email").css("border-color", "#dddddd");
+        }
+        else{
+            $("#input-box-email").css("border-color", "#ff0000");
+        }
+    })
+    $("#signup-button").click(function(){
         let n = $("#input-box-pw").val().length;
         if (n < 6) {
             $("#input-box-pw").css("border-color", "#ff0000");
@@ -240,6 +337,28 @@
             $("#input-box-pw2").css("border-color", "#ff0000");
         }
     })
+    $("#signup-button").click(function(){
+        if ($('input:checkbox[id="check2"]').is(":checked") == true) {
+        }
+        else{
+            alert("이용약관과 개인정보 수집 및 이용 동의는 필수입니다.");
+        }
+    })
+    $("#signup-button").click(function(){
+        if ($('input:checkbox[id="check3"]').is(":checked") == true) {
+        }
+        else{
+            alert("만 14세 이상 동의는 필수입니다.");
+        }
+    })
+    $("#check1").click(function(){
+        if ($("#check1").prop("checked")){
+            $("input[type=checkbox]").prop("checked",true);
+        }
+        else{
+            $("input[type=checkbox]").prop("checked",false);
+        }
+    })
     $("#input-box-phone1").keyup(function() {
         if ($(this).val().length === 3){
             $("#input-box-phone2").focus();
@@ -250,5 +369,7 @@
             $("#input-box-phone3").focus();
         }
     })
+    $("#input-box-add1").prop("readonly", true);
+    $("#input-box-code").prop("readonly", true);
 </script>
 </html>

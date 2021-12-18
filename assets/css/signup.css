@@ -370,6 +370,11 @@
     margin-bottom: 20px;
     border: 1.8px solid #dddddd;
 }
+#input-box-email{
+    height: 38px;
+    margin-bottom: 20px;
+    border: 1.8px solid #dddddd;
+}
 #input-box-pw{
     height: 38px;
     width: 400px;
@@ -379,6 +384,58 @@
 #input-box-pw2{
     height: 38px;
     width: 400px;
+    margin-bottom: 20px;
+    border: 1.8px solid #dddddd;
+}
+#input-box-code{
+    height: 38px;
+    width: 280px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    border: 1.8px solid #dddddd;
+    background-color: #FBFBFB;
+}
+#input-box-add1{
+    height: 38px;
+    width: 400px;
+    margin-bottom: 10px;
+    border: 1.8px solid #dddddd;
+    background-color: #FBFBFB;
+}
+#input-box-add2{
+    height: 38px;
+    width: 400px;
+    margin-bottom: 20px;
+    border: 1.8px solid #dddddd;
+}
+.code-wrapper{
+    display: flex;
+    height: 38px;
+    width: 400px;
+    margin-bottom: 20px;
+}
+.select-box-wrapper{
+    height: 38px;
+    width: 400px;
+    margin-bottom: 20px;
+}
+.select-box-year{
+    height: 38px;
+    width: 120px;
+    margin-bottom: 20px;
+    margin-right: 15px;
+    border: 1.8px solid #dddddd;
+}
+.select-box-month{
+    height: 38px;
+    width: 80px;
+    margin-bottom: 20px;
+    margin-right: 15px;
+    border: 1.8px solid #dddddd;
+}
+.select-box-day{
+    height: 38px;
+    width: 80px;
     margin-bottom: 20px;
     border: 1.8px solid #dddddd;
 }
@@ -422,7 +479,28 @@
     letter-spacing: 0.01em;
     font-size: 14px;
 }
-
+#search-button{
+    border: 2px solid #ABABAB;
+    text-decoration: none;
+    width: 140px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ABABAB;
+    font-family: Noto Sans KR, sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 0.01em;
+    text-decoration: none;
+    background: none;
+}
+#search-button:hover{
+    background-color: #ABABAB;
+}
+#search-button:hover > .search-button-content{
+    color: #ffffff
+}
 #signup-button{
     margin-top: 30px;
     border: 2px solid #575757;
@@ -438,10 +516,6 @@
     font-size: 15px;
     letter-spacing: 0.01em;
     text-decoration: none;
-    margin-right: 30px;
-    margin-left: 30px;
-    margin-top: 16px;
-    margin-bottom: 16px;
     background:none;
 }
 #signup-button:hover{
@@ -450,3 +524,6 @@
 #signup-button:hover > .signup-button-content{
     color: #ffffff
 }
+input {
+    outline:none;
+   }
