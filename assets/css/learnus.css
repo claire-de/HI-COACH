@@ -5,6 +5,7 @@ body {
     position: relative;
     left: 5%;
     top: 40px;
+    margin-bottom: 70px;
 }
 .button-content{
     font-size: 42px;
@@ -14,23 +15,32 @@ body {
 .button-content:hover {
 	color: rgba(30,144,255);
 }
-.hero{
-    position: fixed;
-    top: 28%;
-    left: 5%;
+
+.main{
+    display: flex;
+    justify-content:center;
 }
 .title{
-    font-family: sf pro;
-    font-size: 60px;
-    font-weight: 1000;
-    margin-bottom: 10px;
-}
-.title-content{
-    font-family: sf pro;
+    margin-bottom: 60px;
     font-size: 36px;
-    font-weight: 200;
-    margin-top: 0px;
+    font-weight: 1200;
 }
+.details{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.list-title{
+    font-size: 20px;
+    font-weight: 500;
+}
+.list-content{
+    font-size: 16px;
+    font-weight: 500;
+}
+
 .floating-menu {
     font-family: sans-serif;
     background: rgba(250, 218, 94,.5);

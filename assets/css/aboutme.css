@@ -5,6 +5,7 @@ body {
     position: relative;
     left: 5%;
     top: 40px;
+    margin-bottom: 70px;
 }
 .button-content{
     font-size: 42px;
@@ -14,22 +15,24 @@ body {
 .button-content:hover {
 	color: rgba(30,144,255);
 }
+.main{
+    display: flex;
+    justify-content: center;
+}
 .hero{
-    position: fixed;
-    top: 28%;
-    left: 5%;
+    position: relative;
+    top: 00px;
+    display: flex;
+}
+.my-photo{
+    width: 300px;
+    margin-left: 100px;
+    margin-right: 50px;
 }
 .title{
     font-family: sf pro;
-    font-size: 60px;
-    font-weight: 1000;
-    margin-bottom: 10px;
-}
-.title-content{
-    font-family: sf pro;
     font-size: 36px;
-    font-weight: 200;
-    margin-top: 0px;
+    font-weight: 1000;
 }
 .floating-menu {
     font-family: sans-serif;

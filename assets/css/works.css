@@ -1,0 +1,94 @@
+body {
+    font-family: sf pro;
+}
+.button{
+    position: relative;
+    left: 5%;
+    top: 40px;
+    margin-bottom: 70px;
+}
+.button-content{
+    font-size: 42px;
+    text-decoration: none;
+    color: rgba(250, 218, 94);
+}
+.button-content:hover {
+	color: rgba(30,144,255);
+}
+
+
+.container {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 40px;
+}
+.card {
+    display: flex;
+    background-color:rgba(246,249,255);
+    /*border: 1px solid #bacdd8;*/
+    padding: 16px;
+    /*border-radius: 12px;*/
+}
+img {
+    /*border-radius: 12px;*/
+    height: 214px;
+    object-fit: cover;
+}
+.card_details {
+    padding: 16px 8px 8px 8px;
+    margin-left: 24px;
+}
+.tag {
+    padding: 4px 8px;
+    border: 1px solid #e5eaed;
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #788697;
+}
+.name {
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 24px;
+}
+p {
+    font-family: sf pro;
+    font-size: 14px;
+    font-weight: 500;
+    color: #7f8c9b;
+    line-height: 150%;
+}
+button {
+    border: none;
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-weight: 600;
+    color: rgba(30,144,255);
+    background-color: #e0efff;
+    margin-top: 20px;
+}
+button:hover {
+    color: white;
+    background-color: rgba(250, 218, 94);
+}
+#pivo{
+    margin-bottom: 150px;
+}
+
+.floating-menu {
+    background: rgba(250, 218, 94,.5);
+    padding: 5px;
+    z-index: 100;
+    position: fixed;
+    bottom: 40px;
+    left: 40%;
+    display: flex;
+}
+.floating-menu a{
+    font-size: 0.9em;
+    display: block;
+    margin: 10px;
+    color: black;
+    font-family: sf pro;
+    font-weight: 700;
+}
