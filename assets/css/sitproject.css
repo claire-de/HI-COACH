@@ -15,6 +15,115 @@ body {
 .button-content:hover {
 	color: rgba(30,144,255);
 }
+
+
+.hero{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+}
+.title-area{
+    width: 70%
+}
+.keyword{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.tag {
+    padding: 6px 12px;
+    border: 1px solid #e5eaed;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #788697;
+    margin-right: 10px;
+}
+.title{
+    margin-bottom: 40px;
+    font-size: 36px;
+    font-weight: 1200;
+}
+.details{
+    display: flex;
+    align-items:flex-start;
+}
+.list{
+    width: 200px;
+}
+.list-title{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+.list-content{
+    font-size: 16px;
+    font-weight: 500;
+}
+#list-content-rows{
+    margin-bottom: 6px;
+}
+.summary{
+    margin-top: 32px;
+}
+.summary-title{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+.summary-content{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 140%;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    margin-top: 120px;
+}
+.subsection{
+    width: 70%;
+}
+.subsection-title{
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+.subsection-content{
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 140%
+}
+
+.button-area{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    margin-top: 40px;
+    margin-bottom: 200px;
+}
+.button-wrapper{
+    width: 70%;
+}
+button {
+    border: none;
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-weight: 600;
+    color: rgba(30,144,255);
+    background-color: #e0efff;
+    margin-top: 20px;
+}
+#viewposter{
+    margin-left: 20px;
+}
+
+
 .floating-menu {
     font-family: sans-serif;
     background: rgba(250, 218, 94,.5);

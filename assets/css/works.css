@@ -1,5 +1,6 @@
-body {
+body{
     font-family: sf pro;
+    overflow-x: hidden;
 }
 .button{
     position: relative;
@@ -16,6 +17,35 @@ body {
 	color: rgba(30,144,255);
 }
 
+
+.menu{
+    display: flex;
+    justify-content: center;
+}
+.menu-title-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-title{
+    font-size: 28px;
+}
+.menu-choose{
+    display:flex;
+    justify-content:space-between;
+    width: 400px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 1000;
+    color: black;
+}
+.menu-UX{
+    color: black;
+}
+.menu-UI{
+    color: black;
+}
 
 .container {
     margin-left: 15%;
@@ -71,7 +101,7 @@ button:hover {
     color: white;
     background-color: rgba(250, 218, 94);
 }
-#pivo{
+#googledesignchallenge{
     margin-bottom: 150px;
 }
 

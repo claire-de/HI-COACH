@@ -1,5 +1,6 @@
 body {
     font-family: sf pro;
+    overflow: hidden;
 }
 .button{
     position: relative;
