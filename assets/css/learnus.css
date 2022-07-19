@@ -110,6 +110,9 @@ body {
 .button-wrapper{
     width: 70%;
 }
+a{
+    text-decoration: none;
+}
 button {
     border: none;
     padding: 12px 24px;
