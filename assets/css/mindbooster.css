@@ -96,7 +96,22 @@ body {
 .subsection-content{
     font-size: 16px;
     font-weight: 300;
-    line-height: 140%
+    line-height: 140%;
+    margin-bottom: 80px;
+}
+.image-wrapper{
+    display: flex;
+    justify-content:center;
+    margin-bottom: 80px;
+}
+.image{
+    height: 600px;
+}
+#image-interview{
+    margin-left: 40px;
+}
+#last-content{
+    margin-bottom: 120px;
 }
 
 
