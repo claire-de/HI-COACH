@@ -151,6 +151,11 @@ body {
     font-size: 18px;
     font-weight: 600;
 }
+.problemstatement{
+    font-weight: 500;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
 #solution-overview{
     background-color: #E7EBF8;
 }
