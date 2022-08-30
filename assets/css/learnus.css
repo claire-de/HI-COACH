@@ -24,7 +24,7 @@ body {
     margin: 0;
 }
 .title-area{
-    width: 600px;
+    width: 700px;
 }
 .keyword{
     display: flex;
@@ -85,7 +85,7 @@ body {
     align-items: center;
 }
 .group-wrapper{
-    width: 600px;
+    width: 700px;
     margin-left: -590px;
 }
 .group{
@@ -131,7 +131,7 @@ body {
     margin: 0;
 }
 .subsection{
-    width: 600px;
+    width: 700px;
 }
 .subsection-title{
     font-size: 14px;
@@ -160,7 +160,7 @@ body {
     background-color: #E7EBF8;
 }
 #solution-overview-wrapper{
-    width: 800px;
+    width: 850px;
     margin-right: 0;
     margin-left: 0;
 }
@@ -183,7 +183,7 @@ body {
     margin-right: 60px;
 }
 .problemimg{
-    width: 600px;
+    width: 700px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -211,16 +211,16 @@ body {
     margin-top: 60px;
 }*/
 .personaimg{
-    width: 600px;
+    width: 700px;
 }
 .storyboardimg{
-    width: 600px;
+    width: 700px;
 }
 .architectureimg{
-    width: 600px;
+    width: 700px;
 }
 #iterations-wrapper{
-    width: 800px;
+    width: 850px;
 }
 #iterations{
     margin-bottom: 20px;
@@ -258,7 +258,7 @@ body {
     background-color: #E7EBF8;
 }
 #solution-wrapper{
-    width: 800px;
+    width:850px;
     margin-right: 0;
     margin-left: 0;
 }
@@ -294,7 +294,7 @@ body {
     margin-bottom: 100px;
 }
 .button-wrapper{
-    width: 600px;
+    width: 700px;
 }
 a{
     text-decoration: none;
@@ -349,7 +349,7 @@ button:hover{
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 800px;
+  max-width: 850px;
   height: 570px;
   position: relative;
   margin: auto;
